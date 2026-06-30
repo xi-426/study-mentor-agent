@@ -2,6 +2,12 @@
 
 Java 17 + Spring Boot 3 + MySQL 8 学习陪跑 Agent。
 
+项目长期路线图和学习协议见：`docs/PROJECT_ROADMAP.md`。后续开发以该文件为准，按版本一步一步推进。
+
+当前阶段说明见：`docs/V1_PROMPT_AGENT.md`。
+
+当前默认启动不连接数据库。MySQL 配置放在 `src/main/resources/application-mysql.yml`，等进入 V5：MySQL 记忆阶段时，再通过 `mysql` profile 启用。
+
 这个项目不是一次写完的 Demo，而是按 Agent 能力一层一层长出来：
 
 1. Prompt Agent：会根据学习目标给出计划和讲解。

@@ -6,7 +6,15 @@ Java 17 + Spring Boot 3 + MySQL 8 学习陪跑 Agent。
 
 当前阶段说明见：`docs/V1_PROMPT_AGENT.md`。
 
+真实模型接入说明见：`docs/V2_REAL_LLM_CLIENT.md`。
+
+所有版本的调试复盘统一记录在：`docs/DEBUG_NOTES.md`。
+
 当前默认启动不连接数据库。MySQL 配置放在 `src/main/resources/application-mysql.yml`，等进入 V5：MySQL 记忆阶段时，再通过 `mysql` profile 启用。
+
+当前电脑命令行可能没有 Maven；如果 `mvn` 不可用，优先在 IDE 中运行 `StudyMentorCli` 或 `StudyMentorApplication`。
+
+真实模型配置可以放在项目根目录 `.env` 中。`.env` 已被 `.gitignore` 忽略，不要提交真实 API key。
 
 这个项目不是一次写完的 Demo，而是按 Agent 能力一层一层长出来：
 
